@@ -5,55 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paul Michel</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 1em;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      color: #222;
+    }
+
+    .sidebar {
+      width: 250px;
+      padding: 40px 20px;
+      border-right: 1px solid #ccc;
+      height: 100vh;
+      position: fixed;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar p, .sidebar a {
+      font-size: 14px;
       line-height: 1.6;
       color: #222;
     }
 
-    h1, h2 {
-      font-weight: normal;
+    .sidebar a {
+      text-decoration: underline;
     }
 
-    a {
-      color: #000;
-      text-decoration: underline;
+    .content {
+      margin-left: 270px;
+      padding: 40px 30px;
+      max-width: 800px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-top: 40px;
+    }
+
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>Paul Michel</h1>
-  <p>Doctoral Researcher in Political Science<br />
-     University of Cologne</p>
 
-  <h2>About</h2>
-  <p>I am a Ph.D. candidate at the University of Cologne. I study political economy with a focus on migration and climate change.</p>
+  <div class="sidebar">
+    <h1>Paul Michel</h1>
+    <p>Doctoral Researcher<br>University of Cologne</p>
+    <p><a href="mailto:michel@wiso.uni-koeln.de">michel@wiso.uni-koeln.de</a></p>
+    <p><a href="cv/cv-michel.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></p>
+  </div>
 
-  <h2>Current Projects</h2>
-  <ul>
-    <li><strong>Sea Rescue and Irregular Migration</strong> (with <a href="https://sites.google.com/view/sarah-langlotz" target="_blank" rel="noopener noreferrer">Sarah Langlotz</a> and <a href="https://seleue.github.io/" target="_blank" rel="noopener noreferrer">Sebastian Leue</a>)</li>   
-    <li><strong>Not In My Basement: The Political Costs of Climate Reforms</strong> (with <a href="http://mbechtel.com/" target="_blank" rel="noopener noreferrer">Michael M. Bechtel</a> and <a href="https://cccp.uni-koeln.de/de/team/doctoral-researchers/nils-blossey" target="_blank" rel="noopener noreferrer">Nils Blossey</a>)</li>
-    <li><strong>Consumption or Investment? Preferences Over the Use of Carbon Tax Revenues in Europe</strong> (with <a href="http://mbechtel.com/" target="_blank" rel="noopener noreferrer">Michael M. Bechtel</a>, <a href="https://www.uni-bremen.de/iniis/genschel" target="_blank" rel="noopener noreferrer">Philipp Genschel</a>, and <a href="https://www.seelkopf.eu/" target="_blank" rel="noopener noreferrer">Laura Seelkopf</a>)</li>
-    <li><strong>Global Carbon Inequality</strong></li>
-  </ul>
+  <div class="content">
+    <h2>About</h2>
+    <p>I am a Ph.D. candidate at the University of Cologne. I study political economy with a focus on migration and climate change.</p>
 
-  <h2>Publications in Peer-reviewed Journals</h2>
-  <p><em>Cohesion Among Whom? Stayees, Displaced, and Returnees in Conflict Contexts</em> (with 
-    <a href="https://isdc.org/team/tilman-brueck/" target="_blank" rel="noopener noreferrer">Tilman Brück</a>, 
-    <a href="https://sites.google.com/view/sarah-langlotz" target="_blank" rel="noopener noreferrer">Sarah Langlotz</a>, 
-    <a href="https://patriciajustino.net/" target="_blank" rel="noopener noreferrer">Patricia Justino</a>, and 
-    <a href="https://www.personal-page-philip-verwimp.be/" target="_blank" rel="noopener noreferrer">Philip Verwimp</a>), 
-    <em>Journal of Conflict Resolution</em> 69(1): 3–16. 
-    <a href="https://doi.org/10.1177/00220027241254585" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/00220027241254585</a>.
-  </p>
+    <h2>Current Projects</h2>
+    <ul>
+      <li><strong>Sea Rescue and Irregular Migration</strong> (with <a href="https://sites.google.com/view/sarah-langlotz" target="_blank">Sarah Langlotz</a> and <a href="https://seleue.github.io/" target="_blank">Sebastian Leue</a>)</li>
+      <li><strong>Not In My Basement: The Political Costs of Climate Reforms</strong> (with <a href="http://mbechtel.com/" target="_blank">Michael M. Bechtel</a> and <a href="https://cccp.uni-koeln.de/de/team/doctoral-researchers/nils-blossey" target="_blank">Nils Blossey</a>)</li>
+      <li><strong>Consumption or Investment? Preferences Over the Use of Carbon Tax Revenues in Europe</strong> (with <a href="http://mbechtel.com/" target="_blank">Michael M. Bechtel</a>, <a href="https://www.uni-bremen.de/iniis/genschel" target="_blank">Philipp Genschel</a>, and <a href="https://www.seelkopf.eu/" target="_blank">Laura Seelkopf</a>)</li>
+      <li><strong>Global Carbon Inequality</strong></li>
+    </ul>
 
-  <h2>CV</h2>
-  <p><a href="cv/cv-michel.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></p>
+    <h2>Publications in Peer-reviewed Journals</h2>
+    <p><em>Cohesion Among Whom? Stayees, Displaced, and Returnees in Conflict Contexts</em> (with 
+      <a href="https://isdc.org/team/tilman-brueck/" target="_blank">Tilman Brück</a>, 
+      <a href="https://sites.google.com/view/sarah-langlotz" target="_blank">Sarah Langlotz</a>, 
+      <a href="https://patriciajustino.net/" target="_blank">Patricia Justino</a>, and 
+      <a href="https://www.personal-page-philip-verwimp.be/" target="_blank">Philip Verwimp</a>), 
+      <em>Journal of Conflict Resolution</em> 69(1): 3–16. 
+      <a href="https://doi.org/10.1177/00220027241254585" target="_blank">https://doi.org/10.1177/00220027241254585</a>.
+    </p>
+  </div>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:michel@wiso.uni-koeln.de">michel@wiso.uni-koeln.de</a></p>
 </body>
 </html>
