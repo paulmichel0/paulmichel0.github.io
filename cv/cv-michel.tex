@@ -1,0 +1,246 @@
+%% cv-michel.tex — Paul Michel's Academic CV
+%% Compile with: pdflatex cv-michel.tex (run twice for page numbers)
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{textcomp}
+
+% ---------- Hyperlink styling ----------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue!70!black,
+}
+
+% ---------- Section formatting ----------
+\titleformat{\section}
+  {\large\bfseries\scshape}% format
+  {}% label
+  {0pt}% sep
+  {}% before-code
+  [\vspace{2pt}\hrule\vspace{4pt}]% after-code
+
+\titlespacing*{\section}{0pt}{16pt}{6pt}
+
+% ---------- No paragraph indent ----------
+\setlength{\parindent}{0pt}
+
+% ---------- Custom commands ----------
+% Entry with institution/employer on left, date on right, description below
+\newcommand{\cventry}[3]{%
+  #2 \hfill \textbf{#1} \\
+  #3\par\vspace{6pt}%
+}
+
+% Entry with just bold left and date right (no description line)
+\newcommand{\cventrysimple}[2]{%
+  #2 \hfill \textbf{#1}\par\vspace{6pt}%
+}
+
+% ---------- Remove page header ----------
+\pagestyle{plain}
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+  {\LARGE\bfseries Paul Michel}\\[6pt]
+  {\small last updated: February 23\textsuperscript{rd}, 2026}
+\end{center}
+
+\vspace{12pt}
+
+% ==================== CONTACT ====================
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+  \textbf{Contact address}    & University of Cologne \\
+                               & Department of Political Science \\
+                               & IBW building \\
+                               & Herbert-Lewin-Stra\ss e 2 \\
+                               & 50931 Cologne, Germany \\[4pt]
+  \textbf{Email address}      & \href{mailto:michel@wiso.uni-koeln.de}{michel@wiso.uni-koeln.de} \\[4pt]
+  \textbf{Telephone number}   & +49 221 470-76359 \\[4pt]
+  \textbf{Nationality}        & Germany \\
+\end{tabularx}
+
+% ==================== EDUCATION ====================
+\section{Education}
+
+\cventry{University of Cologne}{since 05/2023}{%
+  Ph.D.\ candidate Political Science%
+}
+
+\cventry{University of G\"ottingen}{10/2020 -- 03/2023}{%
+  M.Sc.\ Development Economics%
+}
+
+\cventry{University of Mainz}{04/2015 -- 03/2019}{%
+  B.A.\ Political Science \\
+  B.Sc.\ Economics \\
+  \hspace*{1em}Semester abroad: Nelson Mandela University, Port Elizabeth, South Africa%
+}
+
+% ==================== PUBLICATIONS ====================
+\section{Publications}
+
+``Cohesion Among Whom? Stayees, Displaced, and Returnees in Conflict Contexts''
+(with Tilman Br\"uck, Sarah Langlotz, Patricia Justino, and Philip Verwimp),
+\textit{Journal of Conflict Resolution} 69(1): 3--16.
+doi: \href{https://doi.org/10.1177/00220027241254585}{10.1177/00220027241254585}.
+
+\vspace{6pt}
+
+% ==================== WOKRING PAPERS ====================
+\section{Working Papers}
+
+``Collective Responsibility and Mass Preferences over Climate Action'' (\textit{single-authored})
+
+\vspace{6pt}
+
+``Not In My Basement: The Political Consequences of Climate Reforms'' (with Michael M. Bechtel and Nils Blossey)
+
+\vspace{6pt}
+
+``Risk and Rescue: Irregular Migration Across Origin and Transit'' (with Sarah Langlotz and Sebastian Leue)
+
+\vspace{6pt}
+
+``Mapping Mass Preferences for Carbon Tax Revenue Use in Europe''
+(with Michael M. Bechtel, Philipp Genschel, and Laura Seelkopf)
+
+\vspace{6pt}
+
+``Hidden Champions of the Firewall''
+(with Nils Blossey, Jasmin Rath, and Jens Wäckerle)
+
+\vspace{6pt}
+
+``Fatalists: Climate Beliefs, Time Preferences, and the Great Demographic Reversal''
+(with Nils Blossey)
+
+
+% ==================== WORK EXPERIENCE ====================
+\section{Work Experience}
+
+\cventry{University of Cologne}{since 05/2023}{%
+  Research Associate, Political Economy Lab (Prof.\ Michael Bechtel)%
+}
+
+\cventry{University of G\"ottingen}{10/2020 -- 08/2022}{%
+  Research Assistant, Chair of Development Economics (Prof.\ Andreas Fuchs)%
+}
+
+\cventry{Fraunhofer}{10/2019 -- 09/2020}{%
+  Research Assistant, Center for International Management and Knowledge Economy\\
+  IMW, Leipzig, Germany%
+}
+
+\cventry{Ausw\"artiges Amt (Federal Foreign Office)}{06/2018 -- 08/2018}{%
+  Intern, German Embassy Nairobi, Kenya%
+}
+
+\cventry{KfW Development Bank}{08/2017 -- 12/2017}{%
+  Intern, Health and Social Security Asia, Frankfurt/Main, Germany%
+}
+
+% ==================== RESEARCH AFFILIATIONS ====================
+\section{Research Affiliations}
+
+since 05/2023 \hfill ECONtribute Cluster of Excellence
+
+\vspace{6pt}
+
+% ==================== PRESENTATIONS ====================
+\section{Presentations}
+
+2023:\\
+9\textsuperscript{th} Annual Conference on Migration and Diversity, WZB Social Science Center, Berlin, Germany
+
+\vspace{6pt}
+
+2024:\\
+Departmental Speaker Series, University of Cologne, Germany\\
+EPSA Annual Conference, Cologne, Germany\\
+APSA Annual Meeting, Philadelphia, US\\
+Joint Cologne-Zurich Retreat, Filzbach, Switzerland\\
+GESIS Workshop on Earth Observation Data in the Social Sciences, Cologne, Germany
+
+\vspace{6pt}
+
+2025:\\
+EPG Conference, Sachseln, Switzerland\\
+Departmental Speaker Series, University of Cologne, Germany\\
+EPSA Annual Conference, Madrid, Spain\\
+ECONtrbute Cluster Retreat, Mettmann, Germany\\
+Workshop on the Politics and Irregular Migration, Hamburg, Germany (co-organizer with Sarah Langlotz and Sebastian Leue)\\
+CEMIR Junior Economist Workshop on Migration Research, ifo, Munich, Germany
+
+\vspace{6pt}
+
+2026:\\
+Joint Cologne-Zurich-Innsbruck Retreat, Jenbach, Austria
+
+
+% ==================== TEACHING ====================
+\section{Teaching}
+
+\textbf{University of Cologne}\\
+Public Policy, tutorial, undergraduate\\
+Voters, Public Opinion, and Policymaking, seminar, undergraduate\\
+Research Logic and Research Design, seminar, undergraduate
+
+\vspace{6pt}
+
+\textbf{University of Mainz}\\
+Macroeconomics, tutorial, undergraduate\\
+Microeconomics, exam preparation course, undergraduate\\
+Empirical Economic Research, exam preparation course, undergraduate
+
+% ==================== REFEREEING ====================
+\section{Refereeing}
+
+British Journal of Political Science; European Journal of Political Research; Journal of Elections, Public Opinion, and Parties; Political Behavior
+
+% ==================== GRANTS ====================
+\section{Grants}
+
+2024:\\
+C-SEB Junior StartUp Grant, Center for Social and Economic Behavior, University of Cologne (4000\,\texteuro)\\
+Dr. Hans-Riegel-Foundation, Connex - Science Networking grant (with Paul Michel and Sebastian Leue) (6.500\,\texteuro)
+
+\vspace{6pt}
+
+2025:\\
+C-SEB Junior StartUp Grant, Center for Social and Economic Behavior, University of Cologne (4000\,\texteuro)\\
+Selten Seeding Grant, ECONtribute Cluster of Excellence, University of Cologne (5000\,\texteuro)\\
+German Research Foundation (DFG), Grant for international scientific events (with Sarah Langlotz and Sebastian Leue), Workshop on ``Economics and Politics of Irregular Migration'' (4500\,\texteuro)
+
+
+% ==================== LANGUAGES ====================
+\section{Languages}
+
+German (native)\\
+English (fluent)\\
+French (intermediate)
+
+% ==================== SOFTWARE ====================
+\section{Software}
+
+\LaTeX{} (proficient)\\
+MS Word, Excel, Powerpoint (proficient)\\
+Qualtrics (proficient)\\
+R (proficient)\\
+Stata (proficient)\\
+Claude Code (proficient)\\
+Python (intermediate)\\
+QGIS (intermediate)
+
+\end{document}
