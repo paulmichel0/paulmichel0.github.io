@@ -2,7 +2,7 @@ PWD /Users/admin/Library/CloudStorage/Dropbox/Website/paulmichel0.github.io/cv
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/admin/Library/CloudStorage/Dropbox/Website/paulmichel0.github.io/cv/cv-michel.tex
+INPUT cv-michel.tex
 OUTPUT cv-michel.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
