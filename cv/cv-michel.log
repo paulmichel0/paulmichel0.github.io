@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.13)  5 NOV 2026 16:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.13)  5 NOV 2026 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -445,14 +445,14 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `cv-michel.out' has not changed.
-(rerunfilecheck)             Checksum: 43E87805893A5D369AFA10CCEE2612E6;1119.
+(rerunfilecheck)             Checksum: CC88FD62FB168BF4D968E332C54B15A1;1214.
  ) 
 Here is how much of TeX's memory you used:
- 10263 strings out of 473190
- 159104 string characters out of 5715800
+ 10268 strings out of 473190
+ 159200 string characters out of 5715800
  574019 words of memory out of 5000000
- 33378 multiletter control sequences out of 15000+600000
- 599683 words of font info for 59 fonts, out of 8000000 for 9000
+ 33382 multiletter control sequences out of 15000+600000
+ 602678 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,254b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
@@ -461,10 +461,10 @@ e/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/te
 xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fo
 nts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
 blic/lm/lmri10.pfb>
-Output written on cv-michel.pdf (3 pages, 157612 bytes).
+Output written on cv-michel.pdf (3 pages, 162291 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
