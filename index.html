@@ -8,40 +8,77 @@
   <meta name="keywords" content="Paul Michel, political scientist, political science, University of Cologne, cologne, migration, climate, political economy">
   <meta name="author" content="Paul Michel">
   <title>Paul Michel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --blue: #1f5c99;
+      --blue-dark: #163f6b;
+      --blue-light: #eaf2fb;
+      --blue-line: #c9dcf0;
+      --text: #222;
+      --muted: #555;
+    }
+
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
       margin: 0;
       padding: 0;
       display: flex;
-      color: #222;
+      color: var(--text);
+      background: #fff;
       line-height: 1.8;
     }
 
     .sidebar {
       width: 250px;
       padding: 40px 20px;
-      border-right: 1px solid #ccc;
+      background: var(--blue-light);
+      border-right: 1px solid var(--blue-line);
       height: 100vh;
       position: fixed;
     }
 
-    .sidebar h1 {
-      font-size: 24px;
+    .sidebar img.portrait {
+      display: block;
+      width: 100%;
+      max-width: 210px;
+      height: auto;
+      border-radius: 4px;
       margin-bottom: 10px;
+    }
+
+    .sidebar h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      color: var(--blue-dark);
     }
 
     .sidebar p,
     .sidebar a {
       font-size: 14px;
-      color: #222;
+      color: var(--text);
       text-decoration: none;
       display: block;
       margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: var(--blue);
+    }
+
+    .sidebar a:hover {
+      color: var(--blue-dark);
+      text-decoration: underline;
     }
 
     .content {
@@ -51,8 +88,17 @@
     }
 
     h2 {
-      font-weight: normal;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: -0.01em;
       margin-top: 40px;
+      color: var(--blue-dark);
+      border-bottom: 2px solid var(--blue-line);
+      padding-bottom: 4px;
+    }
+
+    h2:empty {
+      display: none;
     }
 
     ul {
@@ -65,43 +111,62 @@
       text-decoration: none;
     }
 
+    .content a:hover {
+      color: var(--blue);
+    }
+
+    .content strong,
+    .content strong a {
+      color: var(--blue-dark);
+    }
+
     li {
       margin-bottom: 16px;
     }
 
+    strong {
+      font-weight: 600;
+    }
+
     .content a.paper-link {
       display: inline-block;
-      border: 1px solid #bbb;
+      border: 1px solid var(--blue-line);
+      background: var(--blue-light);
       border-radius: 3px;
       padding: 0 8px;
       margin-left: 6px;
       font-size: 12px;
       line-height: 20px;
-      color: #555;
+      color: var(--blue);
       vertical-align: middle;
     }
 
     .content a.paper-link:hover {
-      border-color: #222;
-      color: #222;
+      border-color: var(--blue);
+      color: var(--blue-dark);
     }
 
     details summary {
       cursor: pointer;
       font-size: 14px;
-      color: #555;
+      color: var(--blue);
     }
 
     details p {
       font-size: 14px;
       line-height: 1.6;
       margin: 6px 0 0;
+      padding: 8px 12px;
+      background: var(--blue-light);
+      border-left: 3px solid var(--blue-line);
+      border-radius: 0 3px 3px 0;
     }
   </style>
 </head>
 <body>
 
   <div class="sidebar">
+    <img class="portrait" src="images/paul-michel.jpg" alt="Portrait of Paul Michel" width="210" height="210">
     <h1><strong>Paul Michel</strong></h1>
     <p>Ph.D. Candidate<br>University of Cologne</p>
     <a href="mailto:michel@wiso.uni-koeln.de">michel@wiso.uni-koeln.de</a>
@@ -114,19 +179,19 @@
     <h2></h2>
     <p>I am a Ph.D. candidate at the University of Cologne. I study political economy with a focus on migration and climate change.</p>
 
-    <h2>Working Papers</h2>
+    <h2>Work in Progress</h2>
     <ul>
-      <li><strong>Collective Responsibility and Mass Preferences over Climate Action</strong>
-        <details>
-          <summary>Abstract</summary>
-          <p>Industrialized countries account for the vast majority of historical carbon emissions, yet the consequences of climate change fall disproportionately on the Global South. Does public awareness of the unequal origins of global warming shape preferences over climate action and international redistribution? Building on research on moral reasoning in preference formation, I argue that beliefs about unequal historical contributions activate perceptions of collective responsibility, which in turn increase willingness to act. I test this argument with an original survey fielded in Germany that elicits prior beliefs about the global distribution of historical emissions and experimentally corrects them. I find that respondents substantially overestimate global inequality in emissions while underestimating Germany's relative contribution. Providing accurate information about Germany's historical role significantly increases perceptions of moral responsibility and obligation. Yet these updated responsibility perceptions do not translate into greater support for climate policies, higher budget allocations, or increased charitable giving. The results suggest that appeals to historical responsibility are not an effective approach to mobilizing public support for (international) climate action.</p>
-        </details>
-      </li>
       <li><strong><a href="https://www.econtribute.de/RePEc/ajk/ajkdps/ECONtribute_427_2026.pdf" target="_blank" rel="noopener noreferrer">Not In My Basement: The Political Consequences of Climate Reforms</a></strong> (with <a href="http://mbechtel.com/" target="_blank" rel="noopener noreferrer">Michael M. Bechtel</a> and <a href="https://cccp.uni-koeln.de/de/team/doctoral-researchers/nils-blossey" target="_blank" rel="noopener noreferrer">Nils Blossey</a>) (under review)
         <a class="paper-link" href="https://www.econtribute.de/RePEc/ajk/ajkdps/ECONtribute_427_2026.pdf" target="_blank" rel="noopener noreferrer">Working Paper</a>
         <details>
           <summary>Abstract</summary>
           <p>Climate action provokes voter opposition when it imposes concentrated and easily identifiable costs, but reforms often expose households to uncertain rather than known financial burdens. We argue that this uncertainty allows individuals to develop subjective cost expectations and narratives, generating widespread opposition that extends beyond those most directly exposed. We study these dynamics in the context of Germany's 2023 heating law, a large-scale reform to decarbonize the housing sector. We combine AI-assisted qualitative interviews and open-ended survey responses from 2,377 respondents with two experiments to explore the drivers of reform opposition. We show that opposition is prevalent and linked to subjective cost perceptions and anti-reform narratives emphasizing rising energy prices and government overreach. Subjective cost perceptions are only weakly tied to actual heating conditions and vary systematically with partisan identity. Even major policy redesigns fail to generate majority support. These results advance our understanding of when large-scale climate reforms fail.</p>
+        </details>
+      </li>
+      <li><strong>Most Europeans support significant climate investment over carbon revenue recycling</strong> (with <a href="http://mbechtel.com/" target="_blank" rel="noopener noreferrer">Michael M. Bechtel</a>, <a href="https://www.uni-bremen.de/iniis/genschel" target="_blank" rel="noopener noreferrer">Philipp Genschel</a>, and <a href="https://www.seelkopf.eu/" target="_blank" rel="noopener noreferrer">Laura Seelkopf</a>) (R&amp;R at <em>Nature Communications</em>)
+        <details>
+          <summary>Abstract</summary>
+          <p>Carbon tax revenues can be used in multiple ways, from direct household rebates to climate investments. Existing research suggests publics strongly favor rebates but treats revenue use options in isolation rather than as a nested choice structure characterized by several trade-offs. We design a survey instrument that explicitly maps public preferences across this nested architecture, distinguishing between climate investment and rebates (i), mitigation and adaptation spending (ii), and rebates distributed uniformly, progressively by income, or proportionally to emissions (iii). Analyzing data from 21,000 respondents across 17 European countries, we find that majorities in most countries support significant climate investment over revenue recycling and seek investment in both mitigation and adaptation. Moreover, majorities support larger rebates for low-income households over emissions-proportional or lump-sum rebates. These findings challenge the view that publics oppose climate investment in favor of revenue recycling and point toward greater political feasibility for climate spending than often assumed.</p>
         </details>
       </li>
       <li><strong>Risk and Rescue: Irregular Migration Across Origin and Transit</strong> (with <a href="https://sites.google.com/view/sarah-langlotz" target="_blank" rel="noopener noreferrer">Sarah Langlotz</a> and <a href="https://seleue.github.io/" target="_blank" rel="noopener noreferrer">Sebastian Leue</a>)
@@ -135,11 +200,13 @@
           <p>This paper examines the effects of sea rescue on irregular migration across the Central Mediterranean route, the world's deadliest migration corridor. Using a two-tiered design, we study how rescue at sea shapes the decisions of prospective migrants at origin and smugglers in transit. We complement an original information experiment in Nigeria with high-frequency, geo-referenced data on irregular departures and NGO sea rescue operations. At origin, our experiment shows that correcting beliefs about risk and rescue at sea does not affect irregular migration intentions. At transit, exploiting exogenous variation in NGO rescue availability, we find that greater rescue presence increases contemporaneous departures, consistent with smugglers competing by offering relatively safer passage to Europe.</p>
         </details>
       </li>
-      <li><strong>Most Europeans support significant climate investment over carbon revenue recycling</strong> (with <a href="http://mbechtel.com/" target="_blank" rel="noopener noreferrer">Michael M. Bechtel</a>, <a href="https://www.uni-bremen.de/iniis/genschel" target="_blank" rel="noopener noreferrer">Philipp Genschel</a>, and <a href="https://www.seelkopf.eu/" target="_blank" rel="noopener noreferrer">Laura Seelkopf</a>) (R&amp;R at <em>Nature Communications</em>)
+      <li><strong>Collective Responsibility and Mass Preferences over Climate Action</strong>
         <details>
           <summary>Abstract</summary>
-          <p>Carbon tax revenues can be used in multiple ways, from direct household rebates to climate investments. Existing research suggests publics strongly favor rebates but treats revenue use options in isolation rather than as a nested choice structure characterized by several trade-offs. We design a survey instrument that explicitly maps public preferences across this nested architecture, distinguishing between climate investment and rebates (i), mitigation and adaptation spending (ii), and rebates distributed uniformly, progressively by income, or proportionally to emissions (iii). Analyzing data from 21,000 respondents across 17 European countries, we find that majorities in most countries support significant climate investment over revenue recycling and seek investment in both mitigation and adaptation. Moreover, majorities support larger rebates for low-income households over emissions-proportional or lump-sum rebates. These findings challenge the view that publics oppose climate investment in favor of revenue recycling and point toward greater political feasibility for climate spending than often assumed.</p>
+          <p>Industrialized countries account for the vast majority of historical carbon emissions, yet the consequences of climate change fall disproportionately on the Global South. Does public awareness of the unequal origins of global warming shape preferences over climate action and international redistribution? Building on research on moral reasoning in preference formation, I argue that beliefs about unequal historical contributions activate perceptions of collective responsibility, which in turn increase willingness to act. I test this argument with an original survey fielded in Germany that elicits prior beliefs about the global distribution of historical emissions and experimentally corrects them. I find that respondents substantially overestimate global inequality in emissions while underestimating Germany's relative contribution. Providing accurate information about Germany's historical role significantly increases perceptions of moral responsibility and obligation. Yet these updated responsibility perceptions do not translate into greater support for climate policies, higher budget allocations, or increased charitable giving. The results suggest that appeals to historical responsibility are not an effective approach to mobilizing public support for (international) climate action.</p>
         </details>
+      </li>
+      <li><strong>Hidden Champions</strong> (with <a href="https://nblossey.github.io/" target="_blank" rel="noopener noreferrer">Nils Blossey</a>, <a href="https://rathjasmin.github.io/" target="_blank" rel="noopener noreferrer">Jasmin Rath</a>, and <a href="https://www.jenswaeckerle.com/" target="_blank" rel="noopener noreferrer">Jens Wäckerle</a>)
       </li>
     </ul>
 
